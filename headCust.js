@@ -1,4 +1,3 @@
-// FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   if (actual !== expected){
     console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
@@ -7,8 +6,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp"); //non identical
-assertEqual("Sneakers", "Sneakers"); //identical
-assertEqual(1, 1); //identical numbers
-assertEqual(1, 5); //non identical numbers
+const head = function(data) {
+  console.log(data[0]);
+}
+
+assertEqual(head([5,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
