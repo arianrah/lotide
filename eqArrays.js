@@ -21,9 +21,9 @@ const eqArrays = function(firstArr, secondArr) {
     }
   }
   if (newArr.length == firstArr.length){
-    console.log("true")
+    console.log(true)
   } else {
-    console.log("false")
+    console.log(false)
   }
 }
 
