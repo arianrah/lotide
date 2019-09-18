@@ -19,7 +19,7 @@ const eqArrays = function(firstArr, secondArr) {
   }
 }
 
-const assertArraysEquals = function(firstArr, secondArr) {
+const assertArraysEqual = function(firstArr, secondArr) {
   if (eqArrays(firstArr, secondArr) === true){
     console.log(`✅✅✅ Assertion Passed`)
   } else {
