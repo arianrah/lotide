@@ -1,14 +1,18 @@
 const countLetters = function(string) {
-  let newStr = string.replace(/ /g, '')
-  let stringToArray = [];
-  //console.log(newStr);
+  string = string.split(' ').join('')
+  const results = {};
 
-  //string to array
-  for (let i = 0; i < newStr.length; i++) {
-    stringToArray.push(newStr.charAt(i));
+  for (const letter of string){
+
+      if (results[letter]){
+        results[letter] += 1;
+      } else {
+        results[letter] = 1;
+      }
+
   }
 
-  console.log(stringToArray);
+  return results;
 }
 
-countLetters("lighthouse in the house")
+console.log(countLetters("lighthouse in the house"));

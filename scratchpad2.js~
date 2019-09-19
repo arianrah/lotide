@@ -1,0 +1,5 @@
+const countLetters = function(string) {
+  let newStr = string.replace(/\s/g. ""
+  let stringToArray = [];
+  const results = {};
+}
